@@ -14,7 +14,7 @@
 //        给定 target = 20，返回 false。
 
 //思路：从左到右到下，具有单调性，因此可以从右上角进行查找。小了向下，大了向左。
-class Solution {
+class findNumberIn2DArray{
     public boolean findNumberIn2DArray(int[][] matrix, int target) {
         if(matrix==null||matrix.length==0||matrix[0].length==0)
             return false;
