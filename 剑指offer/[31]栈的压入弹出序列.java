@@ -32,6 +32,6 @@ class Solution {
     			i++;
     		}
     	}
-    }
-    return stack.isEmpty();
+        return stack.isEmpty();
+    }   
 }
