@@ -30,7 +30,7 @@ class Solution{
 				i++;
 			}else{
 				int[] tmp = new int[j-i];
-				for(int k=i;i<j;i++)
+				for(int k=i;k<j;k++)
 					tmp[k-i]=k;
 				res.add(tmp);
 				sum -=i;
