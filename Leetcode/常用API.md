@@ -20,14 +20,41 @@ length:复制的长度.
 
 ## HashMap
 
-- `map.getOrDefalt(key,defaultValue);`  
+- 获取key的value，如果key不存在，则获取默认值
 
-  获取key的value，如果key不存在，则获取默认值 
+  - `map.getOrDefalt(key,defaultValue);`  
 
-- `map.put(key, map.getOrDefault(key,defaultValue)+1);`
+   
 
-  更新map里的值
+- 更新map里的值,原有起初上加1
 
-- `map.keySet()`
+  - `map.put(key, map.getOrDefault(key,defaultValue)+1);`
 
-- 
+  
+
+- 获取Set 集合
+
+  - `map.keySet()`
+
+- `map.containsKey()`
+
+
+
+## HashSet
+
+- 添加元素：
+
+  `hashset.add(E e)`：返回boolean型，如果此 set 中尚未包含指定元素，则添加指定元素；如果此 set 已包含该元素，则该调用不更改 set 并返回 false。
+
+- 删除元素：
+
+  `hashset.clear()`：从此 set 中移除所有元素。
+
+  `hashset.remove(Object o)`：如果指定元素存在于此 set 中，则将其移除。
+
+  `hashset.isEmpty()`：如果此 set 不包含任何元素，则返回 true。
+
+  `hashset.contains(Object o)`：如果此 set 包含指定元素，则返回 true。
+
+  `hashset.size()`：返回此 set 中的元素的数量（set 的容量）
+  
