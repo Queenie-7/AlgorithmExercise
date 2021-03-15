@@ -18,6 +18,23 @@ length:复制的长度.
 
 
 
+## 字符串
+
+- 字符串截取
+
+  `str.substring(startIndex,endIndex)`
+
+  注意，左闭右开[start,end) 最后一个位置不包括
+  
+- 字符串反转
+
+  `String r = new StringBuffer(str).reverse().toString();`
+
+- 字符串 字符数组之间转化
+
+  - `char [] arr = str.toCharArray();`
+  - `String str = new String(arr);`
+
 ## HashMap
 
 - 获取key的value，如果key不存在，则获取默认值
@@ -57,4 +74,30 @@ length:复制的长度.
   `hashset.contains(Object o)`：如果此 set 包含指定元素，则返回 true。
 
   `hashset.size()`：返回此 set 中的元素的数量（set 的容量）
+
+
+
+## 逆序
+
+- List
+
+`Collections.reverse(list)`
+
+- String
+
+  字符串不能直接逆序，先变成`StringBuilder`
+
+  ~~~java
+  String string="runoob";
+  String reverse = new StringBuffer(string).reverse().toString();
+  ~~~
+
   
+
+## ArrayList
+
+`list.add(e);`
+
+`list.add(index,e);`在某个位置插入，其他后移
+
+从头开始添加元素 `list.add(0,e)`
