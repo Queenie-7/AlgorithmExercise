@@ -16,7 +16,11 @@ destPos:目的数组放置的起始位置;
 
 length:复制的长度.
 
+- 数组排序
 
+  `Arrays.sort(nums);`
+
+- 链表转数组
 
 ## 字符串
 
@@ -34,6 +38,14 @@ length:复制的长度.
 
   - `char [] arr = str.toCharArray();`
   - `String str = new String(arr);`
+  
+- 字符串添加删除 
+
+  `StringBuffer str = new StringBuffer();`
+
+  `str.append(t.charAt(i));`
+
+  `str.deleteCharAt(i)`
 
 ## HashMap
 
