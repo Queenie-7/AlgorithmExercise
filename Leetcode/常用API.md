@@ -1,5 +1,15 @@
 # 常用API
 
+## 类型转换
+
+- int转String有三种方式
+
+  - num + ""
+
+  - String.valueOf(num)
+
+  - Integer.toString(num)
+
 ## 数组
 
 - 数组复制
@@ -46,6 +56,10 @@ length:复制的长度.
   `str.append(t.charAt(i));`
 
   `str.deleteCharAt(i)`
+  
+- 字符判断是否为数字
+
+  `Character.isDigit(c)`
 
 ## HashMap
 
@@ -66,6 +80,10 @@ length:复制的长度.
   - `map.keySet()`
 
 - `map.containsKey()`
+
+- 键值对 `map.entrySet()`
+
+  
 
 
 
@@ -113,3 +131,7 @@ length:复制的长度.
 `list.add(index,e);`在某个位置插入，其他后移
 
 从头开始添加元素 `list.add(0,e)`
+
+## Math
+
+- 绝对值：`Math.abs(l-r) <=1 `

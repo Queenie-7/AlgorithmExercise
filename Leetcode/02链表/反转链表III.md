@@ -28,7 +28,7 @@
 
   - **插入cur 后的tmp结点到pre后面**
   - 首先记录tmp
-  - tmp断连，cur.next 连上 tmp.next
+  - tmp删除，cur.next 连上 tmp.next
   - 插入到pre后面
 
 ~~~java
@@ -55,10 +55,13 @@ public class Solution{
         for(int i=0;i<len/k;i++){
             // 头插法，pre作为段的头，反转插入k-1次
             //  0->1->2->3
+            // pre cur tmp
 			for(int j=1;j<k;j++){
-                tmp = cur.next; // 头插法：插入2
-                cur.next = tmp.next; // 1->3
-                // 2 ->1 ,0->2
+                // 头插法：插入tmp 2
+                 // 删除tmp
+                tmp = cur.next;  
+                cur.next = tmp.next; 
+                // 插入tmp
                 tmp.next = pre.next;// （tmp需要连接的不是前一个点，而是pre后的点），tmp.next = cur是错误的
                 pre.next = tmp;
             }
